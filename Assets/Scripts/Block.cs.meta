@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 83a9a9d5f175ec74e86e6240cee65dab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - audioSource: {instanceID: 0}
+  - ScoreUI: {instanceID: 0}
+  - score: {fileID: 11400000, guid: 55913c2a28b57e5478a30c62b89f14d2, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

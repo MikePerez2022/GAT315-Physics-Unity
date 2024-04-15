@@ -3,15 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Kill
+  - Indestructable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Kill
   - Water
   - UI
-  - 
+  - World
   - 
   - 
   - 

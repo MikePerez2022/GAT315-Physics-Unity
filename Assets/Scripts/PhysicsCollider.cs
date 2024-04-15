@@ -34,6 +34,9 @@ public class PhysicsCollider : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         status = "Trigger enter: " + other.name;
+
+
+        Instantiate(fx, transform.position, transform.rotation);
     }
 
     private void OnTriggerStay(Collider other)
@@ -43,7 +46,7 @@ public class PhysicsCollider : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        status = "Trigger enter: " + other.name;
+        status = "Trigger exit: " + other.name;
     }
 
     private void OnGUI()

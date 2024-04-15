@@ -18,7 +18,7 @@ public class KinematicController : MonoBehaviour
         direction.z = Input.GetAxis("Vertical");
         direction = Vector3.ClampMagnitude(direction, 1);
 
-        transform.rotation *= Quaternion.Euler(0, rotation * speed, 0);
+        transform.rotation *= Quaternion.Euler(0, rotation * 1, 0); // * speed
         transform.Translate(direction * speed * Time.deltaTime, space);
     }
 
