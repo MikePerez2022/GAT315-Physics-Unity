@@ -12,10 +12,11 @@ public class KinematicController : MonoBehaviour
         Vector3 direction = Vector3.zero;
         float rotation = 0;
 
-        if(space == Space.World) direction.x = Input.GetAxis("Horizontal");
-        else rotation = Input.GetAxis("Horizontal");
+        //if(space == Space.World) direction.x = Input.GetAxis("Horizontal");
+        //else rotation = Input.GetAxis("Horizontal");
 
-        direction.z = Input.GetAxis("Vertical");
+        //direction.z = Input.GetAxis("Vertical");
+        if(Input.GetKey(KeyCode.LeftControl)) direction.z += 1 * speed;
         direction = Vector3.ClampMagnitude(direction, 1);
 
         transform.rotation *= Quaternion.Euler(0, rotation * 1, 0); // * speed
